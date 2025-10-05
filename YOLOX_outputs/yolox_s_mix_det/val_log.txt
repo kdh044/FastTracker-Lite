@@ -1,0 +1,98 @@
+2025-10-05 20:24:59.406 | INFO     | __main__:main:171 - Args: Namespace(experiment_name='yolox_s_mix_det', name=None, dist_backend='nccl', dist_url=None, batch_size=1, devices=1, local_rank=0, num_machines=1, machine_rank=0, exp_file='exps/example/mot/yolox_s_mix_det.py', fp16=True, fuse=True, trt=False, test=False, speed=False, opts=[], ckpt='pretrained/bytetrack_s_mot17.pth.tar', conf=0.01, nms=0.7, tsize=None, seed=None, track_thresh=0.6, track_buffer=30, match_thresh=0.9, min_box_area=100, config='./configs/004_default.json', mot20=False, data_path='../datasets/MOT17', occ=True)
+2025-10-05 20:24:59.543 | INFO     | __main__:main:181 - Model Summary: Params: 8.94M, Gflops: 43.21
+2025-10-05 20:24:59.543 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2025-10-05 20:24:59.709 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=0.17s)
+2025-10-05 20:24:59.709 | INFO     | pycocotools.coco:__init__:86 - creating index...
+2025-10-05 20:24:59.724 | INFO     | pycocotools.coco:__init__:86 - index created!
+2025-10-05 20:24:59.959 | INFO     | __main__:main:204 - loading checkpoint
+2025-10-05 20:25:00.107 | INFO     | __main__:main:209 - loaded checkpoint done.
+2025-10-05 20:25:00.107 | INFO     | __main__:main:215 - 	Fusing model...
+2025-10-05 20:25:06.256 | INFO     | yolox.evaluators.mot_evaluator:write_results:52 - save results to ./YOLOX_outputs/yolox_s_mix_det/run001/track_results/MOT17-02-SDP.txt
+2025-10-05 20:25:16.034 | INFO     | yolox.evaluators.mot_evaluator:write_results:52 - save results to ./YOLOX_outputs/yolox_s_mix_det/run001/track_results/MOT17-04-SDP.txt
+2025-10-05 20:25:21.532 | INFO     | yolox.evaluators.mot_evaluator:write_results:52 - save results to ./YOLOX_outputs/yolox_s_mix_det/run001/track_results/MOT17-05-SDP.txt
+2025-10-05 20:25:25.331 | INFO     | yolox.evaluators.mot_evaluator:write_results:52 - save results to ./YOLOX_outputs/yolox_s_mix_det/run001/track_results/MOT17-09-SDP.txt
+2025-10-05 20:25:30.211 | INFO     | yolox.evaluators.mot_evaluator:write_results:52 - save results to ./YOLOX_outputs/yolox_s_mix_det/run001/track_results/MOT17-10-SDP.txt
+2025-10-05 20:25:36.662 | INFO     | yolox.evaluators.mot_evaluator:write_results:52 - save results to ./YOLOX_outputs/yolox_s_mix_det/run001/track_results/MOT17-11-SDP.txt
+2025-10-05 20:25:42.249 | INFO     | yolox.evaluators.mot_evaluator:write_results:52 - save results to ./YOLOX_outputs/yolox_s_mix_det/run001/track_results/MOT17-13-SDP.txt
+2025-10-05 20:25:42.269 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:400 - Evaluate in main process...
+2025-10-05 20:25:43.680 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:429 - Loading and preparing results...
+2025-10-05 20:25:44.202 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:429 - DONE (t=0.52s)
+2025-10-05 20:25:44.202 | INFO     | pycocotools.coco:loadRes:367 - creating index...
+2025-10-05 20:25:44.243 | INFO     | pycocotools.coco:loadRes:367 - index created!
+2025-10-05 20:25:45.468 | INFO     | __main__:main:236 - 
+Average forward time: 9.72 ms, Average track time: 3.60 ms, Average inference time: 13.32 ms
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.643
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.920
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.735
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.215
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.570
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.739
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.043
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.334
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.691
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.355
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.638
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.775
+
+2025-10-05 20:25:45.469 | INFO     | __main__:main:256 - Found 21 groundtruths and 7 test files.
+2025-10-05 20:25:45.469 | INFO     | __main__:main:257 - Available LAP solvers ['lap', 'scipy']
+2025-10-05 20:25:45.469 | INFO     | __main__:main:258 - Default LAP solver 'lap'
+2025-10-05 20:25:45.469 | INFO     | __main__:main:259 - Loading files.
+2025-10-05 20:25:47.861 | INFO     | __main__:compare_dataframes:132 - Comparing MOT17-02-SDP...
+2025-10-05 20:25:48.043 | INFO     | __main__:compare_dataframes:132 - Comparing MOT17-13-SDP...
+2025-10-05 20:25:48.206 | INFO     | __main__:compare_dataframes:132 - Comparing MOT17-04-SDP...
+2025-10-05 20:25:48.707 | INFO     | __main__:compare_dataframes:132 - Comparing MOT17-10-SDP...
+2025-10-05 20:25:48.875 | INFO     | __main__:compare_dataframes:132 - Comparing MOT17-05-SDP...
+2025-10-05 20:25:49.052 | INFO     | __main__:compare_dataframes:132 - Comparing MOT17-11-SDP...
+2025-10-05 20:25:49.252 | INFO     | __main__:compare_dataframes:132 - Comparing MOT17-09-SDP...
+2025-10-05 20:25:49.373 | INFO     | __main__:main:267 - Running metrics
+2025-10-05 20:25:50.244 | INFO     | __main__:main:289 - Completed
+2025-10-05 20:25:52.910 | INFO     | __main__:main:171 - Args: Namespace(experiment_name='yolox_s_mix_det', name=None, dist_backend='nccl', dist_url=None, batch_size=1, devices=1, local_rank=0, num_machines=1, machine_rank=0, exp_file='exps/example/mot/yolox_s_mix_det.py', fp16=True, fuse=True, trt=False, test=False, speed=False, opts=[], ckpt='pretrained/bytetrack_s_mot17.pth.tar', conf=0.01, nms=0.7, tsize=None, seed=None, track_thresh=0.6, track_buffer=30, match_thresh=0.9, min_box_area=100, config='./configs/005_default.json', mot20=False, data_path='../datasets/MOT17', occ=True)
+2025-10-05 20:25:53.034 | INFO     | __main__:main:181 - Model Summary: Params: 8.94M, Gflops: 43.21
+2025-10-05 20:25:53.034 | INFO     | yolox.data.datasets.mot:__init__:39 - loading annotations into memory...
+2025-10-05 20:25:53.201 | INFO     | yolox.data.datasets.mot:__init__:39 - Done (t=0.17s)
+2025-10-05 20:25:53.201 | INFO     | pycocotools.coco:__init__:86 - creating index...
+2025-10-05 20:25:53.216 | INFO     | pycocotools.coco:__init__:86 - index created!
+2025-10-05 20:25:53.450 | INFO     | __main__:main:204 - loading checkpoint
+2025-10-05 20:25:53.592 | INFO     | __main__:main:209 - loaded checkpoint done.
+2025-10-05 20:25:53.592 | INFO     | __main__:main:215 - 	Fusing model...
+2025-10-05 20:25:59.687 | INFO     | yolox.evaluators.mot_evaluator:write_results:52 - save results to ./YOLOX_outputs/yolox_s_mix_det/run002/track_results/MOT17-02-SDP.txt
+2025-10-05 20:26:09.087 | INFO     | yolox.evaluators.mot_evaluator:write_results:52 - save results to ./YOLOX_outputs/yolox_s_mix_det/run002/track_results/MOT17-04-SDP.txt
+2025-10-05 20:26:14.712 | INFO     | yolox.evaluators.mot_evaluator:write_results:52 - save results to ./YOLOX_outputs/yolox_s_mix_det/run002/track_results/MOT17-05-SDP.txt
+2025-10-05 20:26:18.484 | INFO     | yolox.evaluators.mot_evaluator:write_results:52 - save results to ./YOLOX_outputs/yolox_s_mix_det/run002/track_results/MOT17-09-SDP.txt
+2025-10-05 20:26:23.373 | INFO     | yolox.evaluators.mot_evaluator:write_results:52 - save results to ./YOLOX_outputs/yolox_s_mix_det/run002/track_results/MOT17-10-SDP.txt
+2025-10-05 20:26:29.923 | INFO     | yolox.evaluators.mot_evaluator:write_results:52 - save results to ./YOLOX_outputs/yolox_s_mix_det/run002/track_results/MOT17-11-SDP.txt
+2025-10-05 20:26:35.903 | INFO     | yolox.evaluators.mot_evaluator:write_results:52 - save results to ./YOLOX_outputs/yolox_s_mix_det/run002/track_results/MOT17-13-SDP.txt
+2025-10-05 20:26:35.927 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:400 - Evaluate in main process...
+2025-10-05 20:26:37.356 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:429 - Loading and preparing results...
+2025-10-05 20:26:38.030 | INFO     | yolox.evaluators.mot_evaluator:evaluate_prediction:429 - DONE (t=0.67s)
+2025-10-05 20:26:38.030 | INFO     | pycocotools.coco:loadRes:367 - creating index...
+2025-10-05 20:26:38.072 | INFO     | pycocotools.coco:loadRes:367 - index created!
+2025-10-05 20:26:39.293 | INFO     | __main__:main:236 - 
+Average forward time: 9.92 ms, Average track time: 3.51 ms, Average inference time: 13.43 ms
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.643
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.920
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.735
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.215
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.571
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.739
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.043
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.334
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.691
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.355
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.638
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.775
+
+2025-10-05 20:26:39.294 | INFO     | __main__:main:256 - Found 21 groundtruths and 7 test files.
+2025-10-05 20:26:39.294 | INFO     | __main__:main:257 - Available LAP solvers ['lap', 'scipy']
+2025-10-05 20:26:39.294 | INFO     | __main__:main:258 - Default LAP solver 'lap'
+2025-10-05 20:26:39.294 | INFO     | __main__:main:259 - Loading files.
+2025-10-05 20:26:41.416 | INFO     | __main__:compare_dataframes:132 - Comparing MOT17-02-SDP...
+2025-10-05 20:26:41.687 | INFO     | __main__:compare_dataframes:132 - Comparing MOT17-13-SDP...
+2025-10-05 20:26:41.848 | INFO     | __main__:compare_dataframes:132 - Comparing MOT17-04-SDP...
+2025-10-05 20:26:42.337 | INFO     | __main__:compare_dataframes:132 - Comparing MOT17-10-SDP...
+2025-10-05 20:26:42.504 | INFO     | __main__:compare_dataframes:132 - Comparing MOT17-05-SDP...
+2025-10-05 20:26:42.680 | INFO     | __main__:compare_dataframes:132 - Comparing MOT17-11-SDP...
+2025-10-05 20:26:42.879 | INFO     | __main__:compare_dataframes:132 - Comparing MOT17-09-SDP...
+2025-10-05 20:26:42.998 | INFO     | __main__:main:267 - Running metrics
+2025-10-05 20:26:43.855 | INFO     | __main__:main:289 - Completed

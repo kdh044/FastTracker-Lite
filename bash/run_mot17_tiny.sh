@@ -11,7 +11,7 @@ EXP_FILE="exps/example/mot/yolox_tiny_mix_det.py"
 CKPT="pretrained/bytetrack_tiny_mot17.pth.tar"
 BATCH=1
 DEVICES=1
-EXPERIMENT_NAME="yolox_tiny_mot17"            # must match track.py --experiment-name
+EXPERIMENT_NAME="yolox_tiny_mix_det"            # must match track.py --experiment-name
 OUTPUTS_ROOT="YOLOX_outputs"                 # where your code writes runs
 
 # Configs directory (all *.json inside will be run)
