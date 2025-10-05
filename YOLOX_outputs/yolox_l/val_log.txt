@@ -1,0 +1,54 @@
+2025-10-05 17:57:50.264 | INFO     | __main__:main:171 - Args: Namespace(experiment_name='yolox_l', name=None, dist_backend='nccl', dist_url=None, batch_size=1, devices=1, local_rank=0, num_machines=1, machine_rank=0, exp_file='exps/default/yolox_l.py', fp16=True, fuse=True, trt=False, test=False, speed=False, opts=[], ckpt='pretrained/yolox_l.pth.tar', conf=0.01, nms=0.7, tsize=None, seed=None, track_thresh=0.6, track_buffer=30, match_thresh=0.9, min_box_area=100, config='./configs/004_default.json', mot20=False, data_path='../datasets/MOT17', occ=True)
+2025-10-05 17:57:50.642 | INFO     | __main__:main:181 - Model Summary: Params: 54.21M, Gflops: 156.01
+2025-10-05 17:57:50.642 | ERROR    | yolox.core.launch:launch:90 - An error has been caught in function 'launch', process 'MainProcess' (26222), thread 'MainThread' (136489489322432):
+Traceback (most recent call last):
+
+  File "/home/danny/mot/FastTracker/tools/track.py", line 355, in <module>
+    launch(
+    └ <function launch at 0x7c21bfae85e0>
+
+> File "/home/danny/mot/FastTracker/yolox/core/launch.py", line 90, in launch
+    main_func(*args)
+    │          └ (╒══════════════════╤════════════════════════════════════════════════════════════════════════════════════════════════════════...
+    └ <function main at 0x7c217c3ccc10>
+
+  File "/home/danny/mot/FastTracker/tools/track.py", line 184, in main
+    val_loader = exp.get_eval_loader(args.batch_size, is_distributed, args.test, data_path=args.data_path)
+                 │   │               │    │           │               │    │               │    └ '../datasets/MOT17'
+                 │   │               │    │           │               │    │               └ Namespace(experiment_name='yolox_l', name=None, dist_backend='nccl', dist_url=None, batch_size=1, devices=1, local_rank=0, nu...
+                 │   │               │    │           │               │    └ False
+                 │   │               │    │           │               └ Namespace(experiment_name='yolox_l', name=None, dist_backend='nccl', dist_url=None, batch_size=1, devices=1, local_rank=0, nu...
+                 │   │               │    │           └ False
+                 │   │               │    └ 1
+                 │   │               └ Namespace(experiment_name='yolox_l', name=None, dist_backend='nccl', dist_url=None, batch_size=1, devices=1, local_rank=0, nu...
+                 │   └ <function Exp.get_eval_loader at 0x7c21a6e89c60>
+                 └ ╒══════════════════╤═════════════════════════════════════════════════════════════════════════════════════════════════════════...
+
+TypeError: Exp.get_eval_loader() got an unexpected keyword argument 'data_path'
+2025-10-05 17:57:53.140 | INFO     | __main__:main:171 - Args: Namespace(experiment_name='yolox_l', name=None, dist_backend='nccl', dist_url=None, batch_size=1, devices=1, local_rank=0, num_machines=1, machine_rank=0, exp_file='exps/default/yolox_l.py', fp16=True, fuse=True, trt=False, test=False, speed=False, opts=[], ckpt='pretrained/yolox_l.pth.tar', conf=0.01, nms=0.7, tsize=None, seed=None, track_thresh=0.6, track_buffer=30, match_thresh=0.9, min_box_area=100, config='./configs/005_default.json', mot20=False, data_path='../datasets/MOT17', occ=True)
+2025-10-05 17:57:53.519 | INFO     | __main__:main:181 - Model Summary: Params: 54.21M, Gflops: 156.01
+2025-10-05 17:57:53.520 | ERROR    | yolox.core.launch:launch:90 - An error has been caught in function 'launch', process 'MainProcess' (26265), thread 'MainThread' (134501051146688):
+Traceback (most recent call last):
+
+  File "/home/danny/mot/FastTracker/tools/track.py", line 355, in <module>
+    launch(
+    └ <function launch at 0x7a52c79dc5e0>
+
+> File "/home/danny/mot/FastTracker/yolox/core/launch.py", line 90, in launch
+    main_func(*args)
+    │          └ (╒══════════════════╤════════════════════════════════════════════════════════════════════════════════════════════════════════...
+    └ <function main at 0x7a52844b8c10>
+
+  File "/home/danny/mot/FastTracker/tools/track.py", line 184, in main
+    val_loader = exp.get_eval_loader(args.batch_size, is_distributed, args.test, data_path=args.data_path)
+                 │   │               │    │           │               │    │               │    └ '../datasets/MOT17'
+                 │   │               │    │           │               │    │               └ Namespace(experiment_name='yolox_l', name=None, dist_backend='nccl', dist_url=None, batch_size=1, devices=1, local_rank=0, nu...
+                 │   │               │    │           │               │    └ False
+                 │   │               │    │           │               └ Namespace(experiment_name='yolox_l', name=None, dist_backend='nccl', dist_url=None, batch_size=1, devices=1, local_rank=0, nu...
+                 │   │               │    │           └ False
+                 │   │               │    └ 1
+                 │   │               └ Namespace(experiment_name='yolox_l', name=None, dist_backend='nccl', dist_url=None, batch_size=1, devices=1, local_rank=0, nu...
+                 │   └ <function Exp.get_eval_loader at 0x7a52aed7dc60>
+                 └ ╒══════════════════╤═════════════════════════════════════════════════════════════════════════════════════════════════════════...
+
+TypeError: Exp.get_eval_loader() got an unexpected keyword argument 'data_path'

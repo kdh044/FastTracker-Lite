@@ -1,0 +1,4 @@
+{
+  "run_dir": "/home/danny/mot/FastTracker/YOLOX_outputs/yolox_x_mix_det/run026",
+  "results_folder": "/home/danny/mot/FastTracker/YOLOX_outputs/yolox_x_mix_det/run026/track_results"
+}
