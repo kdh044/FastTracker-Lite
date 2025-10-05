@@ -121,7 +121,7 @@ This document records the performance metrics for the FastTracker framework when
 | 66.31  | 76.701 | 77.575 | 325  | ~74.5   |
 
 **Performance Graph:**
-![YOLOX-S Performance Plot](./TrackEval/data/trackers/mot_challenge/MOT17-train/FastTracker-S/pedestrian_plot.pdf)
+![YOLOX-S Performance Plot](./TrackEval/data/trackers/mot_challenge/MOT17-train/FastTracker-S/pedestrian_plot.png)
 
 **Tracking Parameters (from `005_default.json`):**
 ```json
