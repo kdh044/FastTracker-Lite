@@ -30,7 +30,7 @@
 
 각 YOLOX 백본 모델(X, L, M, S, Tiny, Nano)에 대한 상세 성능 비교는 [**BENCHMARK_RESULTS.md**](./BENCHMARK_RESULTS.md) 파일을 참고해 주세요.
 
-## ⚡ 빠른 시작
+##  빠른 시작
 
 ### 1. 데이터 준비
 `datasets/` 폴더 안에 아래와 같은 구조로 MOT17 데이터셋을 준비합니다.

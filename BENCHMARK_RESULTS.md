@@ -21,6 +21,9 @@ This document records the performance metrics for the FastTracker framework when
 |--------|--------|--------|------|--------|
 | 76.516 | 88.618 | 85.921 | 240  | ~35.1   |
 
+**Performance Graph:**
+![YOLOX-X Performance Plot](./TrackEval/data/trackers/mot_challenge/MOT17-train/FastTracker-X/pedestrian_plot.pdf)
+
 **Tracking Parameters (from `005_default.json`):**
 ```json
 {
@@ -50,6 +53,9 @@ This document records the performance metrics for the FastTracker framework when
 | HOTA   | MOTA   | IDF1   | IDSW | FPS    |
 |--------|--------|--------|------|--------|
 | 75.093 | 86.664 | 83.806 | 237  | ~51.3   |
+
+**Performance Graph:**
+![YOLOX-L Performance Plot](./TrackEval/data/trackers/mot_challenge/MOT17-train/FastTracker-L/pedestrian_plot.pdf)
 
 **Tracking Parameters (from `005_default.json`):**
 ```json
@@ -81,6 +87,9 @@ This document records the performance metrics for the FastTracker framework when
 |--------|--------|--------|------|--------|
 | 73.721 | 85.096 | 83.511 | 277  | ~58.7   |
 
+**Performance Graph:**
+![YOLOX-M Performance Plot](./TrackEval/data/trackers/mot_challenge/MOT17-train/FastTracker-M/pedestrian_plot.pdf)
+
 **Tracking Parameters (from `005_default.json`):**
 ```json
 {
@@ -110,6 +119,9 @@ This document records the performance metrics for the FastTracker framework when
 | HOTA   | MOTA   | IDF1   | IDSW | FPS    |
 |--------|--------|--------|------|--------|
 | 66.31  | 76.701 | 77.575 | 325  | ~74.5   |
+
+**Performance Graph:**
+![YOLOX-S Performance Plot](./TrackEval/data/trackers/mot_challenge/MOT17-train/FastTracker-S/pedestrian_plot.pdf)
 
 **Tracking Parameters (from `005_default.json`):**
 ```json
@@ -141,6 +153,9 @@ This document records the performance metrics for the FastTracker framework when
 |--------|--------|--------|------|--------|
 | 64.081 | 76.298 | 75.633 | 267  | ~77.1   |
 
+**Performance Graph:**
+![YOLOX-Tiny Performance Plot](./TrackEval/data/trackers/mot_challenge/MOT17-train/FastTracker-Tiny/pedestrian_plot.pdf)
+
 **Tracking Parameters (from `005_default.json`):**
 ```json
 {
@@ -170,6 +185,9 @@ This document records the performance metrics for the FastTracker framework when
 | HOTA   | MOTA   | IDF1   | IDSW | FPS    |
 |--------|--------|--------|------|--------|
 | 60.498 | 69.801 | 74.395 | 174  | ~64.0   |
+
+**Performance Graph:**
+![YOLOX-Nano Performance Plot](./TrackEval/data/trackers/mot_challenge/MOT17-train/FastTracker-Nano/pedestrian_plot.pdf)
 
 **Tracking Parameters (from `005_default.json`):**
 ```json
