@@ -22,7 +22,12 @@ This document records the performance metrics for the FastTracker framework when
 | 76.516 | 88.618 | 85.921 | 240  | ~35.1   |
 
 **Performance Graph:**
-![YOLOX-X Performance Plot](./TrackEval/data/trackers/mot_challenge/MOT17-train/FastTracker-X/pedestrian_plot.png)
+<div align="center">
+  <div style="margin-bottom: 10px;">
+    <img src="./benchmark_images/yolox_x_plot.png" alt="YOLOX-X Performance Plot" width="80%"/>
+    <p style="text-align: center;">YOLOX-X HOTA Curve</p>
+  </div>
+</div>
 
 **Tracking Parameters (from `005_default.json`):**
 ```json
@@ -55,7 +60,12 @@ This document records the performance metrics for the FastTracker framework when
 | 75.093 | 86.664 | 83.806 | 237  | ~51.3   |
 
 **Performance Graph:**
-![YOLOX-L Performance Plot](./TrackEval/data/trackers/mot_challenge/MOT17-train/FastTracker-L/pedestrian_plot.png)
+<div align="center">
+  <div style="margin-bottom: 10px;">
+    <img src="./benchmark_images/yolox_l_plot.png" alt="YOLOX-L Performance Plot" width="80%"/>
+    <p style="text-align: center;">YOLOX-L HOTA Curve</p>
+  </div>
+</div>
 
 **Tracking Parameters (from `005_default.json`):**
 ```json
@@ -88,7 +98,12 @@ This document records the performance metrics for the FastTracker framework when
 | 73.721 | 85.096 | 83.511 | 277  | ~58.7   |
 
 **Performance Graph:**
-![YOLOX-M Performance Plot](./TrackEval/data/trackers/mot_challenge/MOT17-train/FastTracker-M/pedestrian_plot.png)
+<div align="center">
+  <div style="margin-bottom: 10px;">
+    <img src="./benchmark_images/yolox_m_plot.png" alt="YOLOX-M Performance Plot" width="80%"/>
+    <p style="text-align: center;">YOLOX-M HOTA Curve</p>
+  </div>
+</div>
 
 **Tracking Parameters (from `005_default.json`):**
 ```json
@@ -121,7 +136,12 @@ This document records the performance metrics for the FastTracker framework when
 | 66.31  | 76.701 | 77.575 | 325  | ~74.5   |
 
 **Performance Graph:**
-![YOLOX-S Performance Plot](./TrackEval/data/trackers/mot_challenge/MOT17-train/FastTracker-S/pedestrian_plot.png)
+<div align="center">
+  <div style="margin-bottom: 10px;">
+    <img src="./benchmark_images/yolox_s_plot.png" alt="YOLOX-S Performance Plot" width="80%"/>
+    <p style="text-align: center;">YOLOX-S HOTA Curve</p>
+  </div>
+</div>
 
 **Tracking Parameters (from `005_default.json`):**
 ```json
@@ -154,7 +174,12 @@ This document records the performance metrics for the FastTracker framework when
 | 64.081 | 76.298 | 75.633 | 267  | ~77.1   |
 
 **Performance Graph:**
-![YOLOX-Tiny Performance Plot](./TrackEval/data/trackers/mot_challenge/MOT17-train/FastTracker-Tiny/pedestrian_plot.png)
+<div align="center">
+  <div style="margin-bottom: 10px;">
+    <img src="./benchmark_images/yolox_tiny_plot.png" alt="YOLOX-Tiny Performance Plot" width="80%"/>
+    <p style="text-align: center;">YOLOX-Tiny HOTA Curve</p>
+  </div>
+</div>
 
 **Tracking Parameters (from `005_default.json`):**
 ```json
@@ -187,7 +212,12 @@ This document records the performance metrics for the FastTracker framework when
 | 60.498 | 69.801 | 74.395 | 174  | ~64.0   |
 
 **Performance Graph:**
-![YOLOX-Nano Performance Plot](./TrackEval/data/trackers/mot_challenge/MOT17-train/FastTracker-Nano/pedestrian_plot.png)
+<div align="center">
+  <div style="margin-bottom: 10px;">
+    <img src="./benchmark_images/yolox_nano_plot.png" alt="YOLOX-Nano Performance Plot" width="80%"/>
+    <p style="text-align: center;">YOLOX-Nano HOTA Curve</p>
+  </div>
+</div>
 
 **Tracking Parameters (from `005_default.json`):**
 ```json
